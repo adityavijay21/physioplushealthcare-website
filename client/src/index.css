@@ -13,7 +13,19 @@ body {
     background-color: #008d00; 
     color: white;
   }
+  overflow-x: hidden;
+}
 
+::-webkit-scrollbar{
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-track{
+  background-color: white;
+}
+::-webkit-scrollbar-thumb{
+  background-color: #16a34a;
+  border-radius: 1rem;
 }
 
 code {
@@ -28,4 +40,8 @@ code {
 }
 .group-loginbg-color{
   background: radial-gradient(circle, rgba(84,190,106,1) 10%, rgba(0,108,23,1) 67%);
+}
+
+.groupfittoplaybg{
+  background: linear-gradient(180deg, rgba(239, 250, 239, 0.00) 0%, rgba(239, 250, 239, 0.30) 41.15%, rgba(239, 250, 239, 0.41) 100%);
 }

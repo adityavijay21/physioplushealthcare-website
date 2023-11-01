@@ -7,41 +7,49 @@ const cards = [
     title: "Chiropractor",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a dolor sed quam rhoncus consequat.",
+    color: "bg-emerald-50",
   },
   {
     title: "Pain Care",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a dolor sed quam rhoncus consequat.",
+    color: "bg-purple-50",
   },
   {
     title: "Ortho Physio",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a dolor sed quam rhoncus consequat.",
+    color: "bg-amber-50",
   },
   {
     title: "Sports Physio",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a dolor sed quam rhoncus consequat.",
+    color: "bg-gray-200",
   },
   {
     title: "Pediatric Care",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a dolor sed quam rhoncus consequat.",
+    color: "bg-purple-50",
   },
   {
     title: "Neuro Physio",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a dolor sed quam rhoncus consequat.",
+    color: "bg-amber-50",
   },
   {
     title: "Psychologist",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a dolor sed quam rhoncus consequat.",
+    color: "bg-emerald-50",
   },
   {
     title: "Therapist",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a dolor sed quam rhoncus consequat.",
+    color: "bg-gray-100",
   },
 ];
 
@@ -82,7 +90,9 @@ const CardCarousel = () => {
             style={{ width: cardWidth + "px" }}
             // style={{ width: "100%" }}
           >
-            <div className="bg-purple-50 flex flex-col pl-4 rounded-2xl justify-evenly">
+            <div
+              className={`flex flex-col pl-4 rounded-2xl justify-evenly ${card.color}`}
+            >
               <div className="text-black text-xl font-bold mt-5 self-start whitespace-nowrap">
                 {card.title}
               </div>

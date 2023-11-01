@@ -27,19 +27,24 @@ function App() {
           />
         </Routes>
       ) : (
-        <Navbar
-          isLoginClicked={isLoginClicked}
-          setIsLoginClicked={setIsLoginClicked}
-        />
+        <>
+          <Navbar
+            isLoginClicked={isLoginClicked}
+            setIsLoginClicked={setIsLoginClicked}
+          />
+          <Routes>
+            <Route
+              path="/"
+              element={<Home setIsLoginClicked={setIsLoginClicked} />}
+            />
+            <Route path="/fit-to-play" element={<FitToPlay />} />
+            <Route path="/player+" element={<Player />} />
+            <Route path="/physioconnect" element={<PhysioConnect />} />
+            <Route path="/products" element={<Products />} />
+          </Routes>
+          <FooterNav />
+        </>
       )}
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/fit-to-play" element={<FitToPlay />} />
-        <Route path="/player+" element={<Player />} />
-        <Route path="/physioconnect" element={<PhysioConnect />} />
-        <Route path="/products" element={<Products />} />
-      </Routes>
-      <FooterNav />
     </div>
   );
 }

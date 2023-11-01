@@ -1,15 +1,16 @@
-import i1 from "../assets/image1.jpeg";
+import i2 from "../assets/image1.jpeg";
 import i3 from "../assets/image2.jpeg";
-import i2 from "../assets/image3.jpeg";
+import i1 from "../assets/image3.jpeg";
 import Slider from "../components/Slider";
 import HomeImage from "../assets/HomeImage.png";
 import HomeImage2 from "../assets/HomeImage2.png";
-import HomeImage3 from "../assets/homeImage3.png";
+import HomeImage3 from "../assets/HomeImage3.png";
 import HomeImage4 from "../assets/HomeImage4.png";
 import HomeImage5 from "../assets/HomeImage5.png";
 import HomeImage6 from "../assets/HomeImage6.png";
 import blogimg from "../assets/blogimg.png";
 import { AiOutlineCheck } from "react-icons/ai";
+import { FaWhatsappSquare } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import CardCarousel from "../components/Carousel";
 
@@ -18,15 +19,15 @@ const Home = (props) => {
 
   return (
     <div>
-      <section className="w-1172 h-642 font-helvatica mt-8 groupbgHomeSection">
-        <div
-          className=" w-[690px] font-bold text-black text-[58px] font-helvetica mx-auto mt-20
-        "
-        >
-          <div>Free, Personalized Online</div>
-          <div className="-mt-5">Physiotherapy Health Care</div>
+      <a href="https://wa.me/9928088430">
+        <FaWhatsappSquare fontSize={48} className="bottom-5 right-5 fixed text-green-500"/>
+      </a>
+      <section className="w-1172 h-642 font-inter mt-20  groupbgHomeSection">
+        <div className=" w-[829px] h-[140px] font-bold text-black text-[58px]  mx-auto mt-20">
+          <div className="ml-6">Free, Personalized Online</div>
+          <div className="-mt-4">Physiotherapy Health Care</div>
         </div>
-        <div className="w-[971px] font-normal text-zinc-500 text-[18px] mt-10 mx-auto">
+        <div className="w-[1041px] font-normal text-zinc-500 text-[18px] mt-12 mx-auto">
           <div>
             Start improving phsyical health and well being today. Let PhysioPlus
             shows you how. Building Power to Build A Physically
@@ -35,7 +36,7 @@ const Home = (props) => {
             Healthy World : Supporting Sportsman carrer growth
           </div>
         </div>
-        <div className="w-[612px] h-[64px] rounded-md border border-neutral-500 flex items-center flex-row justify-evenly mt-16 mx-auto">
+        <div className="w-[612px] h-[64px] rounded-md border border-neutral-500 flex items-center flex-row justify-evenly mt-14 mx-auto">
           <form className="flex">
             <div className="">
               <svg
@@ -68,7 +69,7 @@ const Home = (props) => {
                 </defs>
               </svg>
             </div>
-            <select className="text-black bg-white outline-none cursor-pointer">
+            <select className="text-black bg-transparent outline-none cursor-pointer rounded-md overflow-scroll max-h-20">
               <option value="" className="text-center">
                 Location
               </option>
@@ -127,7 +128,7 @@ const Home = (props) => {
                 </defs>
               </svg>
             </div>
-            <select className="text-black bg-white outline-none cursor-pointer">
+            <select className="text-black bg-transparent outline-none cursor-pointer ">
               <option value="" className="text-center">
                 Category
               </option>
@@ -156,82 +157,130 @@ const Home = (props) => {
           </button>
         </div>
       </section>
-      <section className="flex items-center mx-auto justify-evenly mt-20 font-helvetica">
-        <div className="border w-[361px] h-[491px] rounded-2xl groupBgCard shadow-md space-y-6">
-          <p className="items-center mt-6 text-3xl font-bold mx-10">
-            Clinical Treatment{" "}
-            <span className="ml-6 text-3xl font-bold">Physiotherapy</span>
-          </p>
-          <p className="text-slate-500 text-[16px] font-normal mx-auto w-[315px]">
-            High quality physiotherapy care at our PhysioPlus Centre near you.
-            Best Treatment for Ortho / Neuro and many more Issues
-          </p>
-          <img
-            src={i2}
-            alt=""
-            loading="lazy"
-            className="w-[315px] h-[179px] mx-auto rounded-2xl"
-          />
-          <button className="border border-zinc-400 bg-white text-green-700 text-xl font-semibold px-7 w-[315px] h-[54px] rounded-lg ml-6">
-            Schedule a Treatment
-          </button>
+      <section className="font-inter self-stretch flex w-full items-start mt-24 justify-between gap-5 px-5 max-md:max-w-full max-md:flex-wrap max-md:justify-center">
+        <div className="text-black text-center text-xl font-semibold max-w-[491px] self-stretch grow shrink-0 basis-auto max-md:max-w-full">
+          Subscribe now with the exciitng offer at just 99{" "}
         </div>
-        <div className="border w-[361px] h-[491px] rounded-2xl groupBgCard space-y-6 shadow-md">
-          <p className="items-center mt-7 mx-10 text-3xl font-bold">
-            Physio Home Visits{" "}
-            <span className="-ml-1 text-3xl font-bold">
-              Physio's Availability
-            </span>
-          </p>
-          <p className="text-slate-500 text-[15px] font-normal w-[315px] mx-auto">
-            Home Visits by certified By PhysioPlus Physiotherapists for Patients
-            with mobility issues & for patients looking for convenience
-          </p>
-          <img
-            src={i1}
-            alt=""
-            loading="lazy"
-            className="w-[315px] h-[179px] mx-auto rounded-2xl mt-10"
-          />
-          <button className="border border-zinc-400 bg-white text-green-700 text-xl font-semibold px-7 w-[315px] h-[54px] rounded-lg ml-6">
-            Schedule a Home Visit
-          </button>
+        <div className="text-black text-center text-xl font-semibold self-center my-auto">
+          •
         </div>
-        <div className="border w-[361px] h-[491px] rounded-2xl groupBgCard space-y-6 shadow-md">
-          <p className="items-center mt-6 ml-20 mr-3 text-3xl font-bold">
-            Expert Online{" "}
-            <span className="-ml-1 text-3xl font-bold">Physiotherapy</span>
-          </p>
-          <p className="text-slate-500 text-[16px] font-normal mx-auto w-[315px]">
-            Certified PhysioPlus therapists offer online sessions for patients
-            with mobility challenges and those seeking convenience.
-          </p>
-          <img
-            src={i3}
-            alt=""
-            loading="lazy"
-            className="mx-auto rounded-2xl w-[315px] h-[179px]"
-          />
-          <button className="border border-zinc-400 bg-white text-green-700 text-xl font-semibold px-7 w-[315px] h-[54px] rounded-lg ml-6 mt-2">
-            Schedule a Consultation
-          </button>
+        <div className="text-black text-center text-xl font-semibold max-w-[434px] self-stretch grow shrink-0 basis-auto">
+          Explore the beauty of health with our blog
+        </div>
+        <div className="text-black text-center text-xl font-semibold self-center my-auto">
+          •
+        </div>
+        <div className="text-black text-center text-xl font-semibold max-w-[416px] self-stretch grow shrink-0 basis-auto">
+          Explore the physioplus centres near you
         </div>
       </section>
-      <section className="m-5">
+      <section className="font-inter">
+        <div className="mt-32 ml-[67px]">
+          <p className="text-[18px] font-semibold text-green-700 ml-1">
+            Services
+          </p>
+          <div>
+            <p className="w-[765px] h-[61px] text-[38px] font-semibold">
+              Exceptional Services You Can Rely On
+            </p>
+            <p className="text-slate-500 ml-1">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+              veniam{" "}
+            </p>
+          </div>
+        </div>
+        <div className="flex items-center justify-evenly mt-7">
+          <div className="border w-[360px] h-[497px] rounded-2xl groupBgCard shadow-md">
+            <div className="w-[287px] h-[78px] mt-9 mx-auto">
+              <p className="text-3xl font-bold ml-3">Clinical Treatment</p>
+              <p className="text-3xl font-bold ml-9">Physiotherapy</p>
+            </div>
+            <div className="w-[293px] h-[45px] mt-5 text-[12px] font-normal text-slate-500 mx-auto">
+              <p>High quality physiotherapy care at our PhysioPlus</p>
+              <p>Centre near you. Best Treatment for Ortho / Neuro</p>
+              <p className="ml-16">and many more Issues</p>
+            </div>
+            <div className="mt-8">
+              <img
+                src={i1}
+                alt=""
+                loading="lazy"
+                className="w-[315px] h-[179px] rounded-lg mx-5"
+              />
+            </div>
+            <button className="border border-zinc-400 text-green-700 text-[18px] font-semibold w-[305px] h-[48px] rounded-lg mx-6 mt-8 py-[10px] mb-6">
+              Schedule a Treatment
+            </button>
+          </div>
+
+          <div className="border w-[360px] h-[497px] rounded-2xl groupBgCard shadow-md">
+            <div className="w-[293px] h-[78px] mt-9 mx-auto">
+              <p className="text-3xl font-bold ml-3">Physio Home Visits</p>
+              <p className="text-3xl font-bold ml-16">Availability</p>
+            </div>
+            <div className="w-[291px] h-[45px] mt-5 text-[12px] font-normal text-slate-500 mx-auto">
+              <p className="ml-9">Home Visits by certified By PhysioPlus</p>
+              <p>Physiotherapists for Patients with mobility issues &</p>
+              <p className="ml-10">for patients looking for convenience</p>
+            </div>
+            <div className="mt-8 rounded-lg">
+              <img
+                src={i2}
+                alt=""
+                loading="lazy"
+                className="w-[315px] h-[179px] mx-5"
+              />
+            </div>
+            <button className="border border-zinc-400 text-green-700 text-[18px] font-semibold w-[305px] h-[48px] rounded-lg mx-6 mt-8 py-[10px] mb-6">
+              Schedule a Treatment
+            </button>
+          </div>
+
+          <div className="border w-[360px] h-[497px] rounded-2xl groupBgCard shadow-md">
+            <div className="w-[218px] h-[78px] mt-9 mx-auto">
+              <p className="text-3xl font-bold ml-1">Expert Online</p>
+              <p className="text-3xl font-bold">Physiotherapy</p>
+            </div>
+            <div className="w-[291px] h-[45px] mt-5 text-[12px] font-normal text-slate-500 mx-auto">
+              <p className="ml-5">
+                Certified PhysioPlus therapists offer online
+              </p>
+              <p className="ml-1">
+                sessions for patients with mobility challenges and
+              </p>
+              <p className="ml-16">those seeking convenience.</p>
+            </div>
+            <div className="mt-8">
+              <img
+                src={i3}
+                alt=""
+                loading="lazy"
+                className="w-[315px] h-[179px] mx-5 rounded-lg"
+              />
+            </div>
+            <button className="border border-zinc-400 text-green-700 text-[18px] font-semibold w-[305px] h-[48px] rounded-lg mx-6 mt-8 py-[10px] mb-6">
+              Schedule a Treatment
+            </button>
+          </div>
+        </div>
+      </section>
+      <section className="mt-32 mb-10">
+        <div className="text-black text-4xl font-semibold ml-10 max-md:max-w-full">
+          Irresistible Offers Awaits You..
+        </div>
         <Slider />
       </section>
-      <section>
+      <section className="mt-10">
         <CardCarousel />
       </section>
-      <section className="flex justify-center mx-auto mb-20 space-x-32 mt-52">
+      <section className="mt-24"></section>
+      <section className="flex justify-center mx-auto mb-20 space-x-32 mt-52 font-inter">
         <div>
-          <p className="w-[528px] text-[45px] font-bold font-helvetica -mt-40">
-            Strength Physical Health
-          </p>
-          <span className="text-[45px] font-bold font-helvetica">
-            and Wellness
-          </span>
-          <p className="w-[538px] text-[20px] font-normal font-helvetica text-zinc-500 mt-6">
+          <div className="w-[558px] h-[108px] -mt-40">
+            <p className="text-[45px] font-bold ">Strength Physical Health</p>
+            <p className="text-[45px] font-bold -mt-3">and Wellness</p>
+          </div>
+          <p className="w-[573px] h-[120px] text-[20px] font-normal  text-zinc-500 mt-12">
             Discover the pinnacle of physical health and wellness with our
             expertly crafted strength programs. Our tailored approach and
             certified professionals will guide you towards your fitness goals,
@@ -239,31 +288,31 @@ const Home = (props) => {
             strength, elevate your life.
           </p>
 
-          <div className="relative flex mt-10 ml-10">
+          <div className="relative flex mt-16 ml-10">
             <div className="w-6 h-6 rounded-[50%] bg-green-800"></div>
             <AiOutlineCheck className="absolute text-white text-[18px] font-semibold mt-1 ml-1" />
-            <p className="text-[23px] ml-4 -mt-1 font-medium font-helvetica">
+            <p className="text-[23px] ml-4 -mt-1 font-medium ">
               Guidance you can trust
             </p>
           </div>
           <div className="relative flex mt-2 ml-10">
             <div className="w-6 h-6 rounded-[50%] bg-green-800"></div>
             <AiOutlineCheck className="absolute text-white text-[18px] font-semibold mt-1 ml-1" />
-            <p className="text-[23px] ml-4 -mt-1 font-medium font-helvetica">
+            <p className="text-[23px] ml-4 -mt-1 font-medium ">
               Skill for life success
             </p>
           </div>
           <div className="relative flex mt-2 ml-10">
             <div className="w-6 h-6 rounded-[50%] bg-green-800"></div>
             <AiOutlineCheck className="absolute text-white text-[18px] font-semibold mt-1 ml-1" />
-            <p className="text-[23px] ml-4 -mt-1 font-medium font-helvetica">
+            <p className="text-[23px] ml-4 -mt-1 font-medium ">
               Strategies to stay fit
             </p>
           </div>
           <div className="relative flex mt-2 ml-10">
             <div className="w-6 h-6 rounded-[50%] bg-green-800"></div>
             <AiOutlineCheck className="absolute text-white text-[18px] font-semibold mt-1 ml-1" />
-            <p className="text-[23px] ml-4 -mt-1 font-medium font-helvetica">
+            <p className="text-[23px] ml-4 -mt-1 font-medium ">
               Strategies to stay fit
             </p>
           </div>
@@ -273,7 +322,7 @@ const Home = (props) => {
               onClick={() => {
                 setIsLoginClicked(true);
               }}
-              className="text-white font-helvetica border w-[227px] h-[54px] text-xl font-semibold bg-green-700 rounded-[10px] mt-16 ml-10 shadow-md"
+              className="text-white  border w-[227px] h-[54px] text-xl font-semibold bg-green-700 rounded-[10px] mt-16 ml-10 shadow-md"
             >
               Login For FREE
             </button>
@@ -283,24 +332,22 @@ const Home = (props) => {
           src={HomeImage}
           alt="home"
           loading="lazy"
-          className="w-[476px]h-[476px] rounded-2xl shadow-[rgb(239,245,255)_45px_-35px_2px_10px]"
+          className="w-[476px] h-[476px] rounded-2xl shadow-[rgb(239,245,255)_40px_-35px_1px_10px]"
         />
       </section>
-      <section className="flex justify-center mx-auto mb-20 space-x-32 mt-60">
+      <section className="flex justify-center mx-auto mb-20 space-x-32 mt-60 font-inter">
         <img
           src={HomeImage2}
           alt="home"
           loading="lazy"
-          className="w-[476px]h-[476px] rounded-2xl shadow-[rgb(239,255,255)_-42px_-29px_2px_10px]"
+          className="w-[476px]h-[476px] rounded-2xl shadow-[rgb(239,255,255)_-42px_-29px_1px_10px]"
         />
         <div>
-          <p className="w-[528px] text-[45px] font-bold font-helvetica -mt-40">
-            Reasons to choose
-          </p>
-          <span className="text-[45px] font-bold font-helvetica">
-            Physio Plus
-          </span>
-          <p className="w-[538px] text-[20px] font-normal font-helvetica text-zinc-500 mt-6">
+          <div className="w-[528px] text-[45px] -mt-40">
+            <p className="font-bold">Reasons to choose</p>
+            <p className="text-[45px] font-bold -mt-4">Physio Plus</p>
+          </div>
+          <p className="w-[538px] text-[20px] font-normal  text-zinc-500 mt-6">
             Choose PhysioPlus for personalized care and expert physiotherapists
             who prioritize your well-being, ensuring your path to recovery is
             smooth and effective
@@ -312,7 +359,7 @@ const Home = (props) => {
               loading="lazy"
               className="w-[46px] h-[226.035px]"
             />
-            <div className="font-helvetica text-[23px] font-semibold space-y-7 ml-1">
+            <div className=" text-[23px] font-semibold space-y-7 ml-1">
               <p>Value for money</p>
               <p>Qualified therapists</p>
               <p>Personalised treatment plan</p>
@@ -320,7 +367,7 @@ const Home = (props) => {
             </div>
           </div>
           <Link to="#">
-            <button className="text-green-500 font-helvetica border w-[221px] text-[23px] font-bold bg-white rounded-[10px] mt-16 ml-10 shadow-lg px-2 py-1 hover:scale-105 transition-all 3s ease">
+            <button className="text-green-500  border w-[221px] text-[23px] font-bold bg-white rounded-[10px] mt-16 ml-10 shadow-lg px-2 py-1 hover:scale-105 transition-all 3s ease">
               Get Started
             </button>
           </Link>
@@ -329,14 +376,14 @@ const Home = (props) => {
 
       <section>
         <div className="flex flex-col px-5 bg-zinc-50">
-          <div className="self-center mt-20 text-5xl font-bold text-black whitespace-nowrap max-md:max-w-full max-md:text-4xl max-md:mt-10">
+          <div className="self-center mt-20 mb-8 text-5xl font-bold text-black whitespace-nowrap max-md:max-w-full max-md:text-4xl max-md:mt-10">
             Popular news and blogs
           </div>
           <div className="text-zinc-500 text-center text-xl self-center max-w-[694px] mt-9 max-md:max-w-full">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut lLorem ipsum dolor sit{" "}
           </div>
-          <div className="self-center w-full max-w-[1116px] mt-28 mb-44 max-md:max-w-full max-md:my-10">
+          <div className="self-center w-full max-w-[1116px] mt-28 mb-[85px] max-md:max-w-full max-md:my-10">
             <div className="flex gap-5 max-md:flex-col max-md:items-stretch max-md:gap-0">
               <div className="flex flex-col items-stretch w-[34%] max-md:w-full max-md:ml-0">
                 <div className="flex flex-col grow max-md:mt-10">
@@ -422,8 +469,8 @@ const Home = (props) => {
           </div>
         </div>
       </section>
-      <section className="flex justify-evenly mt-10">
-        <div className="">
+      <section className="flex justify-evenly mt-5">
+        <div>
           <p className="w-[519px] h-[111px] text-[35px] font-semibold mt-20">
             Unleash Extraordinary Possibilities with Our App!
           </p>
@@ -474,7 +521,7 @@ const Home = (props) => {
           </div>
         </div>
       </section>
-      <section className="mt-20">
+      <section className="mt-28">
         <div className="flex flex-col">
           <div className="bg-gray-50 self-center flex w-full max-w-[1400px] flex-col px-5 py-11 rounded-2xl max-md:max-w-full">
             <div className="self-center flex w-[617px] max-w-full flex-col">
@@ -486,15 +533,20 @@ const Home = (props) => {
                 assist.
               </div>
               <div className="self-center flex w-[572px] max-w-full items-start justify-between gap-5 ml-2.5 mt-11 max-md:flex-wrap max-md:mt-10">
-                <form className="text-zinc-500 text-base font-medium self-stretch w-[300px] max-w-full grow basis-auto pl-4 pr-5 py-4 rounded-md border-[0.5px] border-solid border-black">
-                  Enter your email
+                <form>
+                  <input
+                    className="text-zinc-500 text-base font-medium self-stretch w-[400px] max-w-full grow basis-auto pl-4 pr-5 py-4 rounded-md border-[0.5px] border-solid border-black"
+                    type="text"
+                  ></input>
                 </form>
                 <button className="bg-green-500 font-semibold text-zinc-100 mt-1 flex items-center justify-center w-[142px] max-w-full flex-col px-3 py-3 rounded-md hover:shadow-md">
                   Send
                 </button>
               </div>
               <div className="text-black text-center text-xs font-light underline ml-24 mt-2.5 self-start whitespace-nowrap max-md:ml-2.5">
-                We care about your data in our privacy policy.
+                <a href="/" className="hover:cursor-pointer">
+                  We care about your data in our privacy policy.
+                </a>
               </div>
             </div>
           </div>
